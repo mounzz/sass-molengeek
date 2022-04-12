@@ -1,0 +1,175 @@
+body {
+  width: 100%;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+header #newsletter {
+  height: 10%;
+  width: 100%;
+  background-color: #9b009c;
+  display: flex;
+  justify-content: center;
+}
+header #newsletter .logo {
+  width: 5%;
+  margin: 10px;
+  align-items: center;
+}
+header #champs_newsletter {
+  width: 95%;
+  text-align: center;
+  color: #fff;
+  align-self: center;
+  flex-grow: 4;
+}
+header #champs_newsletter button {
+  border: none;
+  background: #00e173;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 5%;
+}
+header nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #f9f9f9;
+}
+header nav .logo {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  border-right: 2px solid #f9f9f9;
+  height: 100%;
+}
+header nav .menu {
+  width: 80%;
+  height: 100%;
+}
+header nav .menu ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+  margin: 0;
+}
+header nav .menu ul li {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+header nav .menu ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  height: 100px;
+  line-height: 100px;
+  padding: 0px 20px;
+  display: inline-block;
+  position: relative;
+}
+header nav .menu ul li a::after {
+  content: "";
+  position: absolute;
+  border-bottom: 3px solid #000;
+  border-radius: 5px;
+  top: 65px;
+  left: 0;
+  right: 100%;
+  transition: all 500ms;
+}
+header nav .menu ul li a:hover::after {
+  right: 0;
+}
+header nav .menu ul li:last-child {
+  height: 100%;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-left: 2px solid #f9f9f9;
+  padding-left: 35px;
+}
+
+#contenu {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+#contenu h1 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 300;
+}
+#contenu h1::after {
+  content: "___";
+  position: relative;
+  top: 30px;
+  right: 110px;
+  font: size 20px;
+  color: #9b009b;
+}
+#contenu p {
+  padding: 10px;
+}
+#contenu ul li {
+  padding: 10px 0px;
+  margin-left: -10px;
+}
+#contenu ul ::marker {
+  color: #9b009c;
+}
+#contenu h2 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 300;
+}
+
+footer {
+  margin-top: 10%;
+  background-color: #353535;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+footer #section {
+  display: flex;
+  justify-content: center;
+}
+footer #section div {
+  margin: 50px 15px;
+  align-self: center;
+}
+footer #section div a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+footer img {
+  width: 10%;
+  align-self: center;
+}
+footer p {
+  text-align: center;
+  color: #404141;
+}
+footer span {
+  margin-left: 10px;
+}
+
+.fab {
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */
